@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="MauiAppJogoDaVelha.MainPage">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="magenta" Offset="0.3" />
+            <GradientStop Color="cyan" Offset="1.1" />
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontSize" Value="80" />
+            <Setter Property="BorderWidth" Value="4" />
+            <Setter Property="BorderColor" Value="White" />
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, *"
+            ColumnSpacing="10" RowSpacing="10" Margin="10">
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+                FontSize="40"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontFamily="Lobster"
+                Text="Jogo da Velha" />
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="End" WidthRequest="5" />
+            <BoxView  VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn10" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 2 -->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="End" WidthRequest="5" />
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="Start" WidthRequest="5" />
+            <BoxView  VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn11" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 3 -->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="Start" WidthRequest="5" />
+            <BoxView  VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn12" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 4 -->
+        <Grid Grid.Row="2" Grid.Column="0">
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="End" WidthRequest="5" />
+            <BoxView  VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <BoxView  VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn20" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 5 -->
+        <Grid Grid.Row="2" Grid.Column="1">
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="End" WidthRequest="5" />
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="Start" WidthRequest="5" />
+            <BoxView  VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <BoxView  VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn21" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 6 -->
+        <Grid Grid.Row="2" Grid.Column="2">
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="Start" WidthRequest="5" />
+            <BoxView  VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <BoxView  VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn22" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 7 -->
+        <Grid Grid.Row="3" Grid.Column="0">
+            <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="End" WidthRequest="5" />
+            <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="Start" WidthRequest="5" />
+            <BoxView  VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn30" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 8 -->
+        <Grid Grid.Row="3" Grid.Column="1">
+            <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="End" WidthRequest="5" />
+            <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="Start" WidthRequest="5" />
+            <BoxView  VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn31" Clicked="Button_Clicked" />
+        </Grid>
+
+        <!-- Botão 9 -->
+        <Grid Grid.Row="3" Grid.Column="2">
+            <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="Start" WidthRequest="5" />
+            <BoxView  VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="5" />
+            <Button x:Name="btn32" Clicked="Button_Clicked" />
+        </Grid>
+
+
+    </Grid>
+</ContentPage>
